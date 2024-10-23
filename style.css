@@ -1,9 +1,13 @@
 /* BASE STYLES */
 * {
     font-family: sans-serif;
-    font-size: 20px
+    font-size: 20px;
+    margin: 0;
 }
 .navbar {
+    display: flex;                /* Use flexbox */
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; 
     width: 100vw;
     background-color: #59D9A1;
     padding-left: 30px;
@@ -16,6 +20,8 @@
   
 .nav-links {
     list-style: none;
+    display: flex;               /* Use flexbox for nav links */
+    gap: 15px; 
 }
   
 .nav-item a {
@@ -47,6 +53,10 @@
     background-color: #242457;
     color: white;
     padding: 3rem;
+    padding: 3rem;
+    display: flex;              /* Use flexbox */
+    flex-direction: column;     /* Stack items */
+    gap: 1rem;
 }
 
 footer img {
@@ -54,9 +64,16 @@ footer img {
 }
 
 .flex-main {
+    display: flex; 
     background-color: #F5F5F5;
     width: 100%;
     padding-right: 2.5rem;
+}
+.main-content {
+    display: flex;              /* Use flexbox for image containers */
+    flex-wrap: wrap;           /* Allow wrapping */
+    flex-grow: 1;              /* Allow main content to grow */
+    gap: 2rem;                 /* Space between image containers */
 }
 
 .image-container{
@@ -72,6 +89,9 @@ footer img {
 }
 
 footer {
+    display: flex;              /* Use flexbox */
+    justify-content: space-around; /* Space evenly */
+    align-items: center; 
     width: 100%;
     padding: 1rem;
     background-color: #59D9A1;
